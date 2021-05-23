@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Adrián Rebolledo Moreno">
+    <meta name="Description" content="Página de inicio de mi página web">
+  <style type="text/css">
+  body{
+    text-align: center;
+  }
+  h1{
+    display: inline-block;
+    position: relative;
+    color: black;
+    background-color: white;
+    font-family: Impact;
+  }
+  h1::after,h1::before{
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+    transform: scale(0);
+    transition: all 1s ease-in;
+  }
+  h1:hover::before, h1:hover::after{
+    transform: scale(1);
+  }
+  h1::before{
+    left:-140px;
+  }
+  h1::before{
+    right:-140px;
+  }
+  .menuCSS3 ul {
+		display: inline-flex;
+		padding: 0;
+		margin: 0 auto;
+		list-style: none;
+	}
+	.menuCSS3 a {
+    font-size: 15px;
+		display: block;
+		padding: 2em;
+		background-color: white;
+		text-decoration: none;
+		color: black;
+    text-align: center;
+    
+	}
+	.menuCSS3 a:hover {
+		background-color: rgb(26, 23, 23);
+    color: white;
+	}
+	.menuCSS3 ul li ul {
+		display: none;
+	}
+	.menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+		display: block;
+	}
+  footer{
+		background-color: #fff56e; 
+    position:fixed;
+    bottom:0px;
+    height:50px;
+    width:100%;
+  }
+  header{
+      text-align: center;
+  }
+  img.Logo{
+      display: block;
+      margin: auto;
+  }
+  @media screen and (max-width: 992px) {
+    h1::after,h1::before{
+    content: none;
+  }
+    body{
+      background-color: rgb(26, 23, 23);
+      color: white;
+    }
+    h1{
+      background-color: rgb(26, 23, 23);
+      color: white;
+    }
+    footer{
+      background-color: #fff56e;
+      color: black;
+    }
+    .menuCSS3 a {
+    background-color: rgb(26, 23, 23);
+    color: white;
+  	}
+    .menuCSS3 a:hover {
+      background-color: #fff56e;
+      color: black;
+	  }
+      header{
+          text-align: center;
+      }
+      img.Logo{
+          visibility: hidden;
+      }
+    }
+  @media screen and (max-width: 600px) {
+    h1::after,h1::before{
+    content: none;
+  }
+    body{
+      background-color: #fff56e;
+      color: black;
+    }
+    h1{
+      background-color: #fff56e;
+      color: black;
+    }
+    footer{
+      background-color: rgb(26, 23, 23);
+      color: white;
+    }
+    .menuCSS3 a {
+    background-color: #fff56e;
+    color: black;
+  	}
+    .menuCSS3 a:hover {
+		background-color:  rgb(26, 23, 23);
+    color: white;
+	  }
+      header{
+          text-align: center;
+      }
+      img.Logo{
+      display: block;
+      margin: auto;
+      visibility: visible;
+    }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Mi página web: Adrián Rebolledo Moreno</h1> 
+        <img src="Logo.png" class="Logo" width="100px" height="100px">
+    </header>
+    <nav class="menuCSS3">
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Sobre mi</a>
+				<ul>
+					<li><a href="Estudios.html">Mis Estudios</a></li>
+					<li><a href="Hobbies.html">Mis Hobbies</a></li>
+				</ul>
+			</li>
+			<li><a href="Formulario.html">Formulario</a></li>
+			<li><a href="#">Contacto</a>
+				<ul>
+          <li><a href="https://www.instagram.com/pw_adrianrm/">Instagram</a></li>
+					<li><a href="https://twitter.com/PW_AdrianRM">Twitter</a></li>
+					<li><a href="https://www.google.com/maps/@38.9616351,-5.8667198,3a,75y,314.68h,79.71t/data=!3m6!1e1!3m4!1sFtPxaV4JjulQIF3IyA3yog!2e0!7i13312!8i6656">Encuéntranos</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+  <footer>
+    © | Derechos reservados | Adrian Rebolledo Moreno | ©
+  </footer>
+</body>
+</html>
