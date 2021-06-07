@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="Author" content="Adrian RM">
+  <html lang="es">
+  <style type="text/css">
+  body{
+    background-color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+  }
+  h2{
+    font-family: cursive;
+    text-align: center;
+  }
+  h4{
+    font-family: unset;
+    text-align: center;
+    color: white;
+  }
+  .menuCSS3 ul {
+    display: inline-flex;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+  }
+  .menuCSS3 a {
+    font-size: 15px;
+    display: block;
+    padding: 2em;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  .menuCSS3 a:hover {
+    background-color: rgba(219, 219, 219, 1);
+    color: black;
+  }
+  img.Twitter{
+    float: left;
+    margin-left: 65px;
+    height: 40px;
+    width: 40px;
+  }
+  img.Instagram{
+    float: right;
+    margin-right: 65px;
+    height: 40px;
+    width: 40px;
+  }
+  form{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(219, 219, 219, 1);
+    color: black;
+  }
+  footer{
+    font-size: 17px;
+    color: white;
+    background-color: rgba(26, 23, 23, 1);
+    bottom: 0px;
+    height:62.5px;
+    width:100%;
+    text-align: center;
+  }
+  @media screen and (max-width: 992px) {
+    body{
+      background-color: rgba(26, 23, 23, 1);
+      color: rgba(140, 255, 230, 1);
+    }
+    form{
+      text-align: left;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgba(212, 255, 246, 1);
+      color: black;
+    }
+    .menuCSS3 a {
+      background-color: rgba(26, 23, 23, 1);
+      color: white;
+    }
+    .menuCSS3 a:hover {
+      background-color: rgba(212, 255, 246, 1);
+      color: rgba(26, 23, 23, 1);
+    }
+    footer{
+      font-size: 17px;
+      background-color: rgba(26, 23, 23, 1);
+      color: white;
+      bottom: 0px;
+      height:55px;
+      width:100%;
+    }
+    img.Twitter{
+      float: left;
+      margin-left: 55px;
+      height: 40px;
+      width: 40px;
+    }
+    img.Instagram{
+      float: right;
+      margin-right: 55px;
+      height: 40px;
+      width: 40px;
+    }
+    h4{
+      font-family: unset;
+      text-align: center;
+      background-color: rgba(140, 255, 230, 1);
+      color: rgba(140, 255, 230, 1);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    body{
+      background-color: rgba(26, 23, 23, 1);
+      color: rgba(255, 245, 110, 1);
+    }
+    form{
+      text-align: left;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgba(252, 247, 188, 1); 
+      color: black;
+    }
+    .menuCSS3 a {
+      background-color: rgba(26, 23, 23, 1);; 
+      color: rgba(252, 247, 188, 1); 
+    }
+    .menuCSS3 a:hover {
+      background-color: rgba(252, 247, 188, 1); 
+      color: black;
+    }
+    footer{
+      font-size: 15px;
+      background-color: rgba(26, 23, 23, 1);
+      color: white;
+      bottom: 0px;
+      height:40px;
+      width:100%;
+    }
+    img.Twitter{
+      float: left;
+      margin-left: 45px;
+      height: 35.5px;
+      width: 35.5px;
+    }
+    img.Instagram{
+      float: right;
+      margin-right: 45px;
+      height: 35.5px;
+      width: 35.5px;
+    }
+    h4{
+      font-family: unset;
+      text-align: center;
+      background-color: rgba(255, 245, 110, 1);
+      color: rgba(255, 245, 110, 1);
+    }
+  }
+</style>
+</head>
+<body>
+  <nav class="menuCSS3">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="Estudios.html">Estudios</a></li>
+			<li><a href="Hobbies.html">Hobbies</a></li>
+      <li><a href="https://www.google.com/maps/@38.9616351,-5.8667198,3a,75y,314.68h,79.71t/data=!3m6!1e1!3m4!1sFtPxaV4JjulQIF3IyA3yog!2e0!7i13312!8i6656">Encuéntranos</a></li>
+		</ul>
+	</nav>
+  <script>alert("¡Bienvenidx al formulario de mi página web!")</script>
+  <h2>Formulario sobre tus cualidades y caracteristicas</h2>
+  <form>
+    <fieldset>
+    <legend>Datos personales</legend>
+    <p>Nombre: <input type="text" name="nombre" size="15" placeholder="Adrián"></p>
+    <p>Apellidos: <input type="text" name="apellidos" size="20" placeholder="Rebolledo Moreno"></p>
+    <p>Teléfono de contacto: <input type="tel" id="phone" name="phone" placeholder="631-17-23-09" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}"></p>
+    <p>Año de nacimiento: <input type="number" name="nacido" min="1950" max="2021" placeholder="2002" maxlength="4"></p>
+    <p>Introduzca su código postal: <input type="number" name="codigopostal" placeholder="06400" size="10"</p>
+    <p>
+      Seleccione su nacionalidad principal a través del listado de países:
+      <select name="Nacionalidad">
+        <option>Alemania - Alemán/Alemana</option>
+        <option>Andorra - Andorrano/Andorrana</option>
+        <option>Argentina - Argentino/Argentina</option>
+        <option>Australia - Australiano/Australiana</option>
+        <option>Austria - Austriaco/Austriaca</option>
+        <option>Brasil - Brasileño/Brasileña</option>
+        <option>Canadá - Canadiense</option>
+        <option>Chile - Chileno/Chilena</option>
+        <option>Colombia - Colombiano/Colombiana</option>
+        <option>Corea - Coreano/Coreana</option>
+        <option>Croacia - Croata</option>
+        <option>Dinamarca - Danés/Danesa</option>
+        <option>Ecuador - Ecuatoriano/Ecuatoriana</option>
+        <option>Emiratos Arabes - Emiratí</option>
+        <option>Estados Unidos - Estadounidense</option>
+        <option selected>España - Español/Española</option>
+        <option>Francia - Francés/Francesa</option>
+        <option>Finlandia - Finlandés</option>
+        <option>Grecia - Griego/Griega</option>
+        <option>Holanda - Holandés/Holandesa</option>
+        <option>Hungría - Hungaro/Hungara</option>
+        <option>Inglaterra - Inglés/Inglesa</option>
+        <option>Irlanda - Irlandés/Irlandesa</option>
+        <option>Islandia - Islandés/Islandesa</option>
+        <option>Italia - Italiano/Italiana</option>
+        <option>Japón - Jponés/Japonesa</option>
+        <option>Mexico - Mexicano/Mexicana</option>
+        <option>Mónaco - Monegasco/Monegasca</option>
+        <option>Noruega - Noruego/Noruega</option>
+        <option>Polonia - Polaco/Polaca</option>
+        <option>Portugal - Portugués/Portuguesa</option>
+        <option>Suecia - Sueco/Sueca</option>
+        <option>Uruguay - Uruguayo/Uruguaya</option>
+      </select>
+        </p>
+        <!--input radio-->
+        <p>Por favor indique su genero:</p>
+        <input type="radio" id="male" name="genero" value="Maculino">
+        <label for="male">Maculino</label><br>
+        <input type="radio" id="female" name="genero" value="Femenino">
+        <label for="female">Femenino</label><br>
+        <input type="radio" id="other" name="genero" value="Otros">
+        <label for="other">Otros</label>
+        <br>
+        <p>
+        ¿Qué deportes practicas? Puedes seleccionar mas de 1     
+       </p>
+        <label><input type="checkbox" name="atletismo"> Atletismo</label>
+        <label><input type="checkbox" name="baloncesto">Baloncesto</label>
+        <label><input type="checkbox" name="badminton">Badminton</label>
+        <label><input type="checkbox" name="fútbol">Fútbol</label>
+        <label><input type="checkbox" name="pádel">Pádel</label>
+        <label><input type="checkbox" name="volleyball">Volleyball</label>
+        <label><input type="checkbox" name="natación">Natación</label>
+        <label><input type="checkbox" name="ping pong">Ping pong</label>
+        <label><input type="checkbox" name="ninguno">Ninguno de los anteriores</label>  
+        <p>Indique 3 caracteristicas en las que destaca y 3 caracteristicas en las que debería mejorar:</p>
+        <form action="/action_page.php">
+        <textarea name="message" rows="5" cols="40">Las características en las que destaco son: amabilidad, creatividad y sinceridad. En cambio las características en las que debo mejorar son: puntualidad, envidia e irritabilidad</textarea>
+        <br><br>
+        <button type="reset">Restaurar</button>
+        <p><input type="submit" value="Enviar"></p>
+        <input type="button" value="Imprimir" onclick="javascript:window.print()">
+        <a href="javascript:window.print()"><img src="Impresora.png" width="18px" height="18px" alt="Impresora"></a>
+        </form>
+    </fieldset>
+  </form>
+  <h4>EspacioenFooter</h4>
+  <footer>
+    © | Derechos reservados | Adrian Rebolledo Moreno | © <br>
+    <a title="Twitter" href="https://twitter.com/PW_AdrianRM"><img src="Twitter.png" alt="Twitter" class="Twitter"></a>
+    <a title="Instagram" href="https://www.instagram.com/pw_adrianrm/"><img src="Instagram.png" alt="Instagram" class="Instagram"></a>
+</footer>
+</html>
+</body>
