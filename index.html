@@ -9,6 +9,9 @@
       text-align: center;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+    header{
+      text-align: center;
+    }
     @font-face {
       font-family: LetrasDobles;
       src: url(LetrasHuecas.ttf);
@@ -46,19 +49,16 @@
     .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
       display: block;
     }
+    img.Logo{
+      display: block;
+      margin: auto;
+    }
     footer{
       background-color: rgba(255, 245, 110, 1); 
       position:fixed;
       bottom:0px;
       height:50px;
       width:100%;
-    }
-    header{
-      text-align: center;
-    }
-    img.Logo{
-      display: block;
-      margin: auto;
     }
     @media screen and (max-width: 992px) {
       body{
@@ -68,10 +68,6 @@
       h1{
         background-color: rgba(26, 23, 23, 1);
         color: white;
-      }
-      footer{
-        background-color: rgba(255, 245, 110, 1); 
-        color: black;
       }
       .menuCSS3 a {
         background-color: rgba(26, 23, 23, 1);
@@ -87,6 +83,10 @@
       img.Logo{
         visibility: hidden;
       }
+      footer{
+        background-color: rgba(255, 245, 110, 1); 
+        color: black;
+      }
     }
     @media screen and (max-width: 600px) {
       body{
@@ -96,10 +96,6 @@
       h1{
         background-color: rgba(255, 245, 110, 1); 
         color: black;
-      }
-      footer{
-        background-color: rgba(26, 23, 23, 1);
-        color: white;
       }
       .menuCSS3 a {
         background-color: rgba(255, 245, 110, 1); 
@@ -117,6 +113,10 @@
         display: block;
         margin: auto;
         visibility: visible;
+      }
+      footer{
+        background-color: rgba(26, 23, 23, 1);
+        color: white;
       }
     }
   </style>
